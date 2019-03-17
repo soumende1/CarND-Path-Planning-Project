@@ -100,10 +100,10 @@ It then provides as output a set of waypoints to follow.
 
 The Path Planning module is typically decomposed into the following set of sub-modules:
 
-<b>predictions:</b> will predict the trajectories of the surrounding detected objects
-behaviour planner: will define a set of candidate high level targets for the vehicle to follow (lane changes, slow down …)
-trajectories generation: for every possible high level targets, a percise path to follow will be computed
-trajectories cost ranking: for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen
+<B>predictions:</B> will predict the trajectories of the surrounding detected objects
+<B> behaviour planner: </B> will define a set of candidate high level targets for the vehicle to follow (lane changes, slow down …)
+<B> trajectories generation:</B> for every possible high level targets, a percise path to follow will be computed
+<B> trajectories cost ranking:<B> for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen
 
 
 ### Detailed Implementation
