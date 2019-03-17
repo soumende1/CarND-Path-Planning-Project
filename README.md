@@ -87,6 +87,11 @@ The car doesn't spend more than a 3 second length out side the lane lanes during
 ### The car is able to change lanes
 The car change lanes when the there is a slow car in front of it, and it is safe to change lanes (no other cars around).
 
+
+## Reflection
+This project uses the provided code from the seed project. A lot of the concepts (splines, etc) were taken from the Q&A video that is provided by Udacity. I added additional comments to the code to improve the readability. The functionality is separated into 3 main parts: Prediction, Behaviour Planning and Trajectory Calculation.
+
+
 ### Detailed Implementation
 
 In `main.cpp`, after the data from the simulator is pulled in, I first check whether there is any remaining path left (line 248). If it is the first time around, this means I have to initiate my points to later be used in a spline function to be equal to where the car is right now (lines 266-278). If there is a remaining path, this will get pushed back into the x and y coordinates to be fed the simulator again. Additionally, I calculate the x, y, yaw and velocity based off the end values of the remaining path, in order to have the behavior planner begin from the end of the old path (lines 279-295).
