@@ -63,7 +63,7 @@ The code compiles correctly. One spline (Cubic Spline interpolation implementati
 
 ![See Screenshot](./images/cmake_screenshot.PNG)
 
-
+![See Screenshot](./images/make_screenshot.PNG)
 
 
 
