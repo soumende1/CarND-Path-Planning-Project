@@ -106,7 +106,7 @@ The Path Planning module is typically decomposed into the following set of sub-m
 
 <B> trajectories generation:</B> for every possible high level targets, a percise path to follow will be computed
 
-<B> trajectories cost ranking:<B> for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen
+<B> trajectories cost ranking:</B> for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen
 
 
 ### Detailed Implementation
