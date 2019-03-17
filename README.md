@@ -2,14 +2,21 @@
 Udacity Self-Driving Car Engineer Nanodegree Program, Term 3, Project 1
 
 ### Summary
-In this project, I utilized a behavior planner and spline function in order to drive a car around a simulated track, including performing lane changes as necessary when around traffic.
 
-The car is required to be able to drive at least 4.32 miles around the track without going over the speed limit, leaving the road, colliding with another car, spending too long between lanes (i.e. not staying in one lane other than to pass), and not exceeding certain acceleration and jerk thresholds.
+In this project, the goal is to design a path planner that is able to create smooth, safe paths for the car to follow along a 3 lane highway with traffic. A successful path planner will be able to keep inside its lane, avoid hitting other cars, and pass slower moving traffic all by using localization, sensor fusion, and map data.
 
-A video of my vehicle making it further than the required distance can be seen [here](https://www.youtube.com/watch?v=T-29vo0MbGw).
+In this project, a spline function in order to drive a car around a simulated track, including performing lane changes as necessary when around traffic.
+
+A video of my vehicle making it further than the required distance can be seen [here](https://www.youtube.com/watch?v=???).
+
+
+
+
+
+
+
 
 ### Detailed Implementation
-My implementation heavily relies on the usage of a spline function, which fits a line to given points in a fairly smooth function. After fitting a line, I then feed points along that line (with the distance between them depending on my desired speed) back into the simulator.
 
 In `main.cpp`, after the data from the simulator is pulled in, I first check whether there is any remaining path left (line 248). If it is the first time around, this means I have to initiate my points to later be used in a spline function to be equal to where the car is right now (lines 266-278). If there is a remaining path, this will get pushed back into the x and y coordinates to be fed the simulator again. Additionally, I calculate the x, y, yaw and velocity based off the end values of the remaining path, in order to have the behavior planner begin from the end of the old path (lines 279-295).
 
