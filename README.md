@@ -65,9 +65,11 @@ The code compiles correctly. One spline (Cubic Spline interpolation implementati
 
 ![See Screenshot](./images/make_screenshot.PNG)
 
+## Valid Trajectories
+The car is able to drive at least 4.32 miles without incident.
+The car was able to drive 10 miles without incidents:
 
-
-
+![See Screenshot](./images/10miles.png)
 
 ### Detailed Implementation
 
