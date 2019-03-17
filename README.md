@@ -66,10 +66,26 @@ The code compiles correctly. One spline (Cubic Spline interpolation implementati
 ![See Screenshot](./images/make_screenshot.PNG)
 
 ## Valid Trajectories
-The car is able to drive at least 4.32 miles without incident.
+### The car is able to drive at least 4.32 miles without incident.
 The car was able to drive 10 miles without incidents:
 
-![See Screenshot](./images/10miles.png)
+![See Screenshot](./images/7miles.png)
+
+
+### The car drives according to the speed limit.
+The car was able to drive 7 miles without a red speed limit message.
+
+### Max Acceleration and Jerk are not Exceeded.
+The car was able to drive 10 miles without red max jerk message.
+
+### Car does not have collisions.
+The car was able to drive 10 miles without a collision.
+
+### The car stays in its lane, except for the time between changing lanes.
+The car doesn't spend more than a 3 second length out side the lane lanes during changing lanes, and every other time the car stays inside one of the 3 lanes on the right hand side of the road.
+
+### The car is able to change lanes
+The car change lanes when the there is a slow car in front of it, and it is safe to change lanes (no other cars around).
 
 ### Detailed Implementation
 
