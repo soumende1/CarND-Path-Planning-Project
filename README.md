@@ -111,7 +111,7 @@ The Path Planning module is typically decomposed into the following set of sub-m
 
 ### Detailed Implementation
 
-In `main.cpp`, after the data from the simulator is pulled in, I first check whether there is any remaining path left (line 248). If it is the first time around, this means I have to initiate my points to later be used in a spline function to be equal to where the car is right now (lines 266-278). If there is a remaining path, this will get pushed back into the x and y coordinates to be fed the simulator again. Additionally, I calculate the x, y, yaw and velocity based off the end values of the remaining path, in order to have the behavior planner begin from the end of the old path (lines 279-295).
+In `main.cpp`, after the data from the simulator is pulled in, I first check whether there is any remaining path left [./src/main.cpp](./src/main.cpp#L248) line 248). If it is the first time around, this means I have to initiate my points to later be used in a spline function to be equal to where the car is right now (lines 266-278). If there is a remaining path, this will get pushed back into the x and y coordinates to be fed the simulator again. Additionally, I calculate the x, y, yaw and velocity based off the end values of the remaining path, in order to have the behavior planner begin from the end of the old path (lines 279-295).
 
 Next, I need to change my x & y coordinates into frenet coordinates, s & d (line 298). In frenet, "s" is the distance along a lane while "d" is the distance away from the center dividing line of the road (at least in the simulator). By converting these, it makes it easier to calculate where I want to be on the road, as I can tell it exactly where in each lane to be.
 
