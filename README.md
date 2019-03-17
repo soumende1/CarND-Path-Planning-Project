@@ -59,10 +59,9 @@ the path has processed since last time.
 
 # Rubic Points
 ## Compilation
-The code compiles correctly.
-One  spline (Cubic Spline interpolation implementation) library was used in this project:
+The code compiles correctly. One spline (Cubic Spline interpolation implementation) library was used in this project:
 
-
+![See Screenshot](./images/cmake_screenshot.PNG)
 
 
 
