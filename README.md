@@ -91,6 +91,20 @@ The car change lanes when the there is a slow car in front of it, and it is safe
 ## Reflection
 This project uses the provided code from the seed project. A lot of the concepts (splines, etc) were taken from the Q&A video that is provided by Udacity. I added additional comments to the code to improve the readability. The functionality is separated into 3 main parts: Prediction, Behaviour Planning and Trajectory Calculation.
 
+Path planning: This module is in charge of planning the vehicle trajectory up to a specific goal.
+The path planning module is using as inputs:
+- the sensor fusion outputs
+- the map and localization
+
+It then provides as output a set of waypoints to follow.
+
+The Path Planning module is typically decomposed into the following set of sub-modules:
+
+<b>predictions:</b> will predict the trajectories of the surrounding detected objects
+behaviour planner: will define a set of candidate high level targets for the vehicle to follow (lane changes, slow down …)
+trajectories generation: for every possible high level targets, a percise path to follow will be computed
+trajectories cost ranking: for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen
+
 
 ### Detailed Implementation
 
